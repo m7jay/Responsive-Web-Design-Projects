@@ -1,79 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey Page</title>
     <link rel="stylesheet" href="./survey-page.css"
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id="title">Feedback form</h1>
-        <p id="description">thank you for taking time out help us improve the platform.</p>
-    </header>    
+      <h1 id="title">Feedback form</h1>
+      <p id="description">
+        thank you for taking time out help us improve the platform.
+      </p>
+    </header>
     <form id="survey-form">
-        <div class="form-div"> 
-            <label id="name-label">Name:</label> <br> <br>
-            <input type="text" name="name" id="name" class="input-align" placeholder="Enter your name" required>
-        </div>
-        <div class="form-div"> 
-            <label id="email-label">Email:</label> <br><br>
-            <input type="email" name="email" id="email" class="input-align" placeholder="Enter your email" required>
-        </div>
-        <div class="form-div"> 
-            <label id="number-label">Age: (Optional)</label> <br> <br>
-            <input type="number" name="Age" id="number" class="input-align" placeholder="Enter your age" min="1" max="130">
-        </div>
-        <div class="form-div"> 
-            <p>Which option best describes your current role?</p>
-            <select name="current-role" id="dropdown" class="input-align">
-                <option value="select" disabled selected>Select an option</option>
-                <option value="student">Student</option>
-                <option value="ft-job">Full-time Job</option>
-                <option value="ft-learner">Full-time learner</option>
-                <option value="prefer-not-to-say">Prefer not to say</option>
-                <option value="others">Others</option>
-            </select>
-        </div>
-        <div class="form-div"> 
-            <p>Would you recommend us to a friend?</p>
-            <input type="radio" id="rbtn" name="recommendation" value="definitely">Definitely <br>
-            <input type="radio" id="rbtn" name="recommendation" value="maybe" >Maybe <br> 
-            <input type="radio" id="rbtn" name="recommendation" value="notsure" >Not sure <br>
-        </div>
-        <div class="form-div"> 
-            <p>What is your favourite in the following items?</p>
-            <select name="favourite" id="favourite" class="input-align">
-                <option value="select" disabled selected>Select an option</option>
-                <option value="coding-challenges">Coding Challenges</option>
-                <option value="projects">Projects</option>
-                <option value="community">Community Discussions</option>
-                <option value="open-source">Open Source</option>
-            </select>
-        </div>
-        <div class="form-div"> 
-            <p>What would like to see improved?</p>
-            <input type="checkbox" name="improvements" value="front-end-projects">Front-End Projects<br>
-            <input type="checkbox" name="improvements" value="back-end-projects">Back-End Projects<br>
-            <input type="checkbox" name="improvements" value="data-visualisation">Data Visualisation<br>
-            <input type="checkbox" name="improvements" value="challenges">Open source community<br>
-            <input type="checkbox" name="improvements" value="gitter">Gitter help rooms<br>
-            <input type="checkbox" name="improvements" value="vedios">Videos<br>
-            <input type="checkbox" name="improvements" value="meet-ups">City meet ups<br>
-            <input type="checkbox" name="improvements" value="wiki">Wiki<br>
-            <input type="checkbox" name="improvements" value="forum">Forum<br>
-            <input type="checkbox" name="improvements" value="additional-courses">Additional Courses <br>
-        </div>
-        <div class="form-div"> 
+      <div class="form-div">
+        <label id="name-label">Name:</label> <br />
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input-align"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label id="email-label">Email:</label> <br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-align"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label id="number-label">Age: (Optional)</label> <br />
+        <br />
+        <input
+          type="number"
+          name="Age"
+          id="number"
+          class="input-align"
+          placeholder="Enter your age"
+          min="1"
+          max="130"
+        />
+      </div>
+      <div class="form-div">
+        <p>Which option best describes your current role?</p>
+        <select name="current-role" id="dropdown" class="input-align">
+          <option value="select" disabled selected>Select an option</option>
+          <option value="student">Student</option>
+          <option value="ft-job">Full-time Job</option>
+          <option value="ft-learner">Full-time learner</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <div class="form-div">
+        <p>Would you recommend us to a friend?</p>
+        <input
+          type="radio"
+          id="rbtn"
+          name="recommendation"
+          value="definitely"
+        />Definitely <br />
+        <input
+          type="radio"
+          id="rbtn"
+          name="recommendation"
+          value="maybe"
+        />Maybe <br />
+        <input
+          type="radio"
+          id="rbtn"
+          name="recommendation"
+          value="notsure"
+        />Not sure <br />
+      </div>
+      <div class="form-div">
+        <p>What is your favourite in the following items?</p>
+        <select name="favourite" id="favourite" class="input-align">
+          <option value="select" disabled selected>Select an option</option>
+          <option value="coding-challenges">Coding Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community Discussions</option>
+          <option value="open-source">Open Source</option>
+        </select>
+      </div>
+      <div class="form-div">
+        <p>What would like to see improved?</p>
+        <input
+          type="checkbox"
+          name="improvements"
+          value="front-end-projects"
+        />Front-End Projects<br />
+        <input
+          type="checkbox"
+          name="improvements"
+          value="back-end-projects"
+        />Back-End Projects<br />
+        <input
+          type="checkbox"
+          name="improvements"
+          value="data-visualisation"
+        />Data Visualisation<br />
+        <input type="checkbox" name="improvements" value="challenges" />Open
+        source community<br />
+        <input type="checkbox" name="improvements" value="gitter" />Gitter help
+        rooms<br />
+        <input type="checkbox" name="improvements" value="vedios" />Videos<br />
+        <input type="checkbox" name="improvements" value="meet-ups" />City meet
+        ups<br />
+        <input type="checkbox" name="improvements" value="wiki" />Wiki<br />
+        <input type="checkbox" name="improvements" value="forum" />Forum<br />
+        <input
+          type="checkbox"
+          name="improvements"
+          value="additional-courses"
+        />Additional Courses <br />
+      </div>
+      <div class="form-div">
         <p>Any other comments:</p>
-        <textarea name="cmts" id="comments" placeholder="enter your comments here..." ></textarea><br>
-        <br>
-        </div>
-        <div class="form-div"> 
-        <input type="submit" name="Submit" id="submit" class="input-align">
-        </div>
-        <br><br>
+        <textarea
+          name="cmts"
+          id="comments"
+          placeholder="enter your comments here..."
+        ></textarea
+        ><br />
+        <br />
+      </div>
+      <div class="form-div">
+        <input type="submit" name="Submit" id="submit" class="input-align" />
+      </div>
+      <br /><br />
     </form>
-</body>
+  </body>
 </html>
